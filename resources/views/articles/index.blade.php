@@ -22,7 +22,7 @@
                     </li>
                     <div class="d-flex justify-content-between align-items-center mt-3">
                         <div class="btn-group">
-                        <a href="{{ route('articles.store', ['article' => $article]) }}">
+                        <a href="{{ route('articles.show', ['article' => $article]) }}">
                             <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                         </a>
                             <a href="{{ route('articles.edit', ['article' => $article]) }}">

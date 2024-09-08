@@ -68,13 +68,16 @@ return redirect()->route('articles.index');
      */
     public function update(ArticleUpdate $request, Article $article)
     {
-        $path_image = '';
+       //dd($request->all()); // Per verificare i dati inviati 
+       $path_image = $article->image; 
+       //check immagine
         if ($request->hasFile('image')) {
             $name= $request->file('image')->getClientOriginalName();
             $path_image= $request->file('image')->storeAs('public/images',$name);
+            
         }
         
-            Article::create([
+            $article->update([
                 'title' => $request->title,
                 'description'=> $request->description,
                 'years'=> $request->years,
@@ -89,6 +92,10 @@ return redirect()->route('articles.index');
      */
     public function destroy(Article $article)
     {
-        return view('articles.destroy', ['article' => $article] );
+       
+        $article->delete();
+        return redirect()->route('articles.index')
+        ->with('success', 'Articolo cancellato con successo!');
     }
 }
+

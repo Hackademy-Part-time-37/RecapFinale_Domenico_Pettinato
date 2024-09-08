@@ -1,27 +1,21 @@
 <x-layout>
-    <div class="container">
-        <a href="{{route('articles.show',['article'=>$article])}}" </a>
-            <!-- button class="btn btn-warning rounded-pill px-3" type="button">Edit -->
-
-            <li>
-                <button class="btn btn-primary rounded-pill px-3" type="button">Update</button>
-                <button class="btn btn-danger rounded-pill px-3" type="button">Delete</button>
-            </li>
-
-            <!-- <button class="btn btn-secondary rounded-pill px-3" type="button">Secondary</button>
-        <button class="btn btn-success rounded-pill px-3" type="button">Success</button>
-        <button class="btn btn-info rounded-pill px-3" type="button">Info</button>
-        <button class="btn btn-light rounded-pill px-3" type="button">Light</button>
-        <button class="btn btn-dark rounded-pill px-3" type="button">Dark</button>
-        <button class="btn btn-link rounded-pill px-3" type="button">Link</button> -->
-    </div>
+<x-navbar />
 
     <body>
-        <div class='container'>
+        <div class='container mt-5'>
             <h1>Titolo : {{$article->title}}</h1>
             <p>Descrizione : {{$article->description}}</p>
             <p>Anno: {{$article->years}}</p>
             <img src="{{Storage::url($article->image)}}">
         </div>
+
+        <div class="container mt-3">
+        <form action="{{route('articles.destroy', [ 'article' => $article['id']])}}" method="POST">
+        @csrf
+        @method('DELETE')
+
+         <button type="submit" class="btn btn-danger rounded-pill" >Delete</button>    
+        </div>
+        
     </body>
 </x-layout>

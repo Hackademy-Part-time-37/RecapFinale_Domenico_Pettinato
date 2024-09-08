@@ -22,7 +22,10 @@ class ArticleStore extends FormRequest
     public function rules(): array
     {
         return [
-            'title'=> 'required|max:100'
+            'title' => 'required|max:100',
+            'description' => 'required',
+            'years' => 'required|integer',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048', // Validazione per l'immagine
         ];
     }
 }
