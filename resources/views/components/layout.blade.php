@@ -6,7 +6,6 @@
     @vite(['resources/css/app.css','resources/js/app.js'])
     <title>SelfWorkFinale</title>
 </head>
-
 <body>
     {{$slot}}
 </body>

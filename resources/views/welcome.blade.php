@@ -9,16 +9,12 @@
 </head>
 
 <body>
-
     <x-navbar />
-
-
     <div class="col-12  d-flex justify-content-center mt-5">
         <h1>
             HOME PAGE
         </h1>
     </div>
-
 </body>
 
 </html>

@@ -1,15 +1,7 @@
 <x-layout>
     <x-navbar />
-    <body>
-
-        <div class="col-12  mt-3 d-flex justify-content-center">
-            <h1>
-                Login
-            </h1>
-        </div>
-
         <!-- validazione del login -->
-
+        <div class="col-12  mt-3 d-flex justify-content-center">
         @if ($errors->any())
         <div class="alert alert-danger">
             <ul>
@@ -17,6 +9,7 @@
                 <li>{{ $error }}</li>
                 @endforeach
             </ul>
+        </div>
         </div>
         @endif
 
