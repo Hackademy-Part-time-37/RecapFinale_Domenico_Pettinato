@@ -68,7 +68,7 @@ return redirect()->route('articles.index');
      */
     public function update(ArticleUpdate $request, Article $article)
     {
-       //dd($request->all()); // Per verificare i dati inviati 
+       //dd($request->all()); // verifico i dati inviati 
        $path_image = $article->image; 
        //check immagine
         if ($request->hasFile('image')) {

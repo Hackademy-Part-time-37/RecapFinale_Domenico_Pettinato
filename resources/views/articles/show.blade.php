@@ -6,7 +6,7 @@
             <h1>Titolo : {{$article->title}}</h1>
             <p>Descrizione : {{$article->description}}</p>
             <p>Anno: {{$article->years}}</p>
-            <img src="{{Storage::url($article->image)}}">
+            <img src="{{ $article->image }}">
         </div>
 
         <div class="container mt-3">

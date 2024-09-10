@@ -6,10 +6,10 @@
     <div class="collapse text-bg-dark" id="navbarHeader">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8 col-md-7 py-4">
-            <p class="text-body-secondary">Questo lavoro è stato svolto al termine del percorso di formazione.</p>
+          <div class="col-sm-8 col-md-7 py-3">
+            <p class="text-body-secondary">QUESTA CONTENUTO NON LO VEDI PERCHE' NON SEI LOGGATO.</p>
           </div>
-          <div class="col-sm-4 offset-md-1 py-4">
+          <div class="col-sm-4 offset-md-1 py-3">
             <h4>
               <ul class="list-unstyled">
                 <li><a class="nav-link active" aria-current="page" href="/">Home</a>
@@ -43,10 +43,10 @@
       <div class="collapse text-bg-dark" id="navbarHeader">
         <div class="container">
           <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-              <p class="text-body-secondary">Questo lavoro è stato svolto al termine del percorso di formazione.</p>
+            <div class="col-sm-8 col-md-7 py-3">
+              <p class="text-body-secondary">QUESTO CONTENUTO LO VEDI PERCHE' SEI LOGGATO.</p>
             </div>
-            <div class="col-sm-4 offset-md-1 py-4">
+            <div class="col-sm-4 offset-md-1 py-3">
               <h4>
                 <ul class="list-unstyled">
                   <li>
