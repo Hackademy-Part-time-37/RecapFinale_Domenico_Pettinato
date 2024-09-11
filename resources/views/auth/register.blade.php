@@ -1,8 +1,5 @@
 <x-layout>
     <x-navbar />
-   
-    
-
     <!-- validazione della registrazione -->
  <div class="col-12  mt-3 d-flex justify-content-center">
     @if ($errors->any())

@@ -1,6 +1,6 @@
 <x-layout>
     @auth
-    <body>
+    <body style="background-color:#eadaa2;">
         <div>
             <x-navbar />
             <div class="col-12  d-flex justify-content-center mt-5">
