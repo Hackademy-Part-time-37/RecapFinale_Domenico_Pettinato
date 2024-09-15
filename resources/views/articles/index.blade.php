@@ -4,7 +4,6 @@
     <div class="col-12 d-flex justify-content-center mt-3">
         <h1>Elenco Articoli</h1>
     </div>
-
     <div class="row">
         @foreach ($articles as $article)
         <div class=" col-3 md-4 mb-5">
@@ -17,11 +16,8 @@
                 <!-- Se non è una URL, assume che sia un path e utilizza Storage::url -->
                 <img src="{{ Storage::url($article->image) }}" alt="Immagine dell'articolo">
                 @endif
-
                 <div class="card-body">
-                    
-                        <h1 class="h5">Titolo: {{ $article->title }}</h1>
-                        
+                    <h1 class="h5">Titolo: {{ $article->title }}</h1>
                     <div class="d-flex justify-content-between align-items-center mt-3">
                         <div class="btn-group">
                             <a href="{{ route('articles.show', ['article' => $article]) }}">

@@ -10,7 +10,9 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home');
 });
-
+Route::get('/end', function () {
+    return view('end');
+});
 // metodo per generare le tutte le rotte del Controller
 //Route::resource('article', ArticleController::class); 
 

@@ -1,21 +1,19 @@
 <x-layout>
+    <x-navbar />
     @auth
-    <body style="background-color:#eadaa2;">
-        <div>
-            <x-navbar />
-            <div class="col-12  d-flex justify-content-center mt-5">
-                <h1>
-                    Benvenuto {{Auth::user()->name}} <br>
-                    ti sei registrato con la mail <br> {{Auth::user()->email}} <br>
-                    Ora puoi vedere tutto il contenuto del sito web. <br>
+    <body>
+        <div class="position-relative">
+             <img src="{{ asset('images/home.png') }}" class="img-fluid w-100 vh-100" alt="Background Image">
+             <div class="form-overlay-home">
+                <h1 class="container mt-1 px-1 text-white" >
+                    Benvenuto {{ Auth::user()->name }} !!!
+                    ti sei registrato con la mail {{ Auth::user()->email }} <br>
                     Buona Navigazione!
                 </h1>
             </div>
-            <img src="{{ asset ('images\smile.jfif') }}" class="img-fluid" alt="image" width="300" height="400" > 
         </div>
     </body>
     @endauth
-
     @guest
 
     NON SEI AUTENTICATO
@@ -23,3 +21,5 @@
     @endguest
 
 </x-layout>
+
+
