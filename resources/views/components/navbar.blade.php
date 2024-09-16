@@ -5,14 +5,10 @@
     <div class="collapse text-bg-dark " id="navbarHeader">
       <div class="container">
         <div class="row">
-          <!-- <div class="col-sm-8 col-md-7 py-5">
-            <h2 class="text-body-secondary">QUESTA CONTENUTO NON LO VEDI PERCHE' NON SEI LOGGATO </h2>
-          </div> -->
           <div class="col-sm-4 offset-md-1 py-3">
             <h4>
               <ul class="list-unstyled">
                 <li>
-                  <!-- <a class="nav-link active" aria-current="page" href="/">Home</a> -->
                   <a class="nav-link active" aria-current="page" href="{{ route('register') }}">Register</a>
                   <a class="nav-link active" aria-current="page" href="{{ route('login') }}">Login</a>
                 </li>
@@ -54,7 +50,6 @@
                 </ul>
                 @csrf
                 <div class="mx-2">
-                
                   <button class=" rounded-pill " type="submit">Logout </button>
                 </div>
               </h4>

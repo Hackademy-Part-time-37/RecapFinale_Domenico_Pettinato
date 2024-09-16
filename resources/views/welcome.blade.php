@@ -12,15 +12,15 @@
     </div>
     @endguest
     @auth
-      <!-- immagine personale -->
-      <div class="position-relative">
+    <!-- immagine personale -->
+    <div class="position-relative">
         <img src="{{ asset('images/article.png') }}" alt="welcome background" class="img-fluid w-100 vh-100"">
     <div class=" form-overlay-welcome">
         <h1 class="container text-white">
             Buona lettura sul mio sito
         </h1>
     </div>
-      </div>
-      @endauth
+    </div>
+    @endauth
     </html>
 </x-layout>

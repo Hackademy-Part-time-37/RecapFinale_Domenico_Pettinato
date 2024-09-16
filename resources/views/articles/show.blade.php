@@ -8,7 +8,7 @@
             <p>Anno: {{$article->years}}</p>
             <!-- Immagine dell'articolo -->
             @if (filter_var($article->image, FILTER_VALIDATE_URL))
-            <!-- Se è una URL, mostra direttamente l'immagine dalla URL -->
+            <!-- Se è una URL, mostro direttamente l'immagine dalla URL -->
             <img src="{{ $article->image }}" alt="Immagine dell'articolo">
             @else
             <!-- Se non è una URL, assume che sia un path e utilizza Storage::url -->
@@ -24,6 +24,7 @@
                 @csrf
                 @method('DELETE')
                 <button type="submit" class="btn btn-outline-danger rounded-pill">Delete</button>
+            </form>
         </div>
     </body>
 </x-layout>

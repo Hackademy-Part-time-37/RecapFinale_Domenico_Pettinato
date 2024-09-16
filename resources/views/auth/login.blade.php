@@ -1,6 +1,5 @@
 <x-layout>
     <x-navbar />
-
     <div class="position-relative">
         <!-- L'immagine di sfondo -->
         <img src="{{ asset('images/login.png') }}" alt="login background" class="img-fluid w-100 vh-100">
@@ -45,5 +44,4 @@
             </form>
         </div>
     </div>
-
 </x-layout>
